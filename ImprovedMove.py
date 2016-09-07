@@ -8,7 +8,7 @@ for root, dirs, files in os.walk('C:\Users\Wesley\AppData\Local\osu!\Songs'):
     	if file[-4:].lower() == '.jpg':
     		with Image.open(file) as im:
     			width, height = im.size
-    			if width >= 1280 && height >= 720:
+    			if width >= 1280 and height >= 720:
     				shutil.copy(os.path.join(root, file), os.path.join('C:\Users\Wesley\Desktop\walls', file))
 
 #walks through osu folder and only add wallpapers that are above the 1280x720 dimension range
